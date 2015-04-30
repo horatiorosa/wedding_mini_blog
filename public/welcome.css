@@ -1,0 +1,105 @@
+body{
+	background-image: url("/images/wedding.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(/images/cheddar_jack.ttf);
+
+}
+
+ @font-face{
+  	font-family: mySecondFont;
+   src: url(/images/wedding.ttf);
+
+}
+
+header{
+	height: 150px;
+	background-color: rgba(227, 228, 250, 0.9);
+}
+
+#main{
+	width: 75%;
+	height: 600px;
+	margin: 50px 50px 50px 230px;
+	background-color: rgba(255, 245, 238, 0.5);
+	border-radius: 10px;
+}
+
+.signup{
+	display: inline;
+	float: left;
+	width: 450px;
+	height: 400px;
+	background-image: url("/images/board.jpg");	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 144px auto auto 100px;
+}
+
+.login{
+	display: inline;
+	float: right;
+	width: 450px;
+	height: 400px;
+	background-image: url("/images/board.jpg");	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 144px 100px auto auto;
+}
+
+.loginmsg{
+	font-size: 110px;
+	color: #FEFCFF;
+	text-align: center;
+	margin-top: 97px;
+	font-family: myFirstFont;
+
+}
+
+
+
+.sgupmsg{
+	font-size: 110px;
+	color: #FEFCFF;
+	text-align: center;
+	margin-top: 97px;
+	font-family: myFirstFont;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+p:hover{
+	color: #FFF8C6;
+}
+
+footer{
+	height: 150px;
+	background-color: rgba(227, 228, 250, 0.9);
+}
+
+
+h2{
+/*	font-family: myFirstFont;*/
+	font-size: 45px;
+	text-align: center;
+	margin:;
+	color: #FEFCFF;
+	text-shadow: 2px 2px #625D5D
+}
+
+h1{
+	font-family: mySecondFont;
+	font-size: 100px;
+	text-align: center;
+	padding-top: 30px;
+	color: #FEFCFF;
+	text-shadow: 2px 2px #625D5D
+}

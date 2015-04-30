@@ -4,13 +4,15 @@ require 'bundler/setup'
 require 'rack-flash'
 require './models'
 
+set :database, "sqlite3:exercise.sqlite3"
+set :sessions, true
+use Rack::Flash, sweep: true
 
-set :database, "sqllite3.wed_db.sqllite3"
 
-get '/' do
-	@user = User.all
-	erb	:home
+get '/' do 
+	erb :welcome
 end
+
 
 
 get '/signup' do
@@ -44,4 +46,5 @@ end
 # get '/login-failed' do
 # 	"Incorrect log-in. Please retry."
 # end
+
 
