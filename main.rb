@@ -20,14 +20,14 @@ get '/signup' do
 end
 
 
-post '/signup' do
-	@user = User.new(params[:user])
-	if user.save
-		redirect '/home'
-	else
-		redirect '/signup' #or maybe an error try again alert
-	end
-end
+# post '/signup' do
+# 	@user = User.new(params[:user])
+# 	if user.save
+# 		redirect '/home'
+# 	else
+# 		redirect '/signup' #or maybe an error try again alert
+# 	end
+# end
 
 
 
