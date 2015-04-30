@@ -11,5 +11,4 @@ use Rack::Flash, sweep: true
 
 get '/' do 
 	erb :welcome
-
 end
