@@ -11,15 +11,15 @@ get '/' do
 	erb	:home
 end
 
-post '/sign-in' do
-	@user = User.where(username: params[:username]).first
-		if @user.password == params[:password]
-			redirect '/'
-		else
-			redirect '/login-failed'
-		end
-end
+# post '/sign-in' do
+# 	@user = User.where(username: params[:username]).first
+# 		if @user.password == params[:password]
+# 			redirect '/'
+# 		else
+# 			redirect '/login-failed'
+# 		end
+# end
 
-get '/login-failed' do
-	"Incorrect log-in. Please retry."
-end
+# get '/login-failed' do
+# 	"Incorrect log-in. Please retry."
+# end
