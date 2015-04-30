@@ -1,0 +1,5 @@
+require 'sinatra'
+require 'sinatra/activerecord'
+require 'bundler/setup'
+require 'rack-flash'
+require './models'
