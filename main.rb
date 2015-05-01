@@ -12,3 +12,16 @@ use Rack::Flash, sweep: true
 get '/' do 
 	erb :welcome
 end
+
+get '/signup' do
+	erb :signup
+
+end
+
+get '/login' do
+	erb :login
+end
+
+get '/logout' do
+	erb :logout
+end
