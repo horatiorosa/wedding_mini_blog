@@ -1,0 +1,138 @@
+body{
+	background-image: url("/images/wedding.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(/images/cheddar_jack.ttf);
+
+}
+
+ @font-face{
+  	font-family: mySecondFont;
+   src: url(/images/badscript.ttf);
+
+}
+
+header{
+	height: 250px;
+	background-color: rgba(255, 245, 238, 0.9);
+	border-radius: 80px;
+	/*background-image: url(/images/frame2.jpg);*/
+/*	background-position: center;
+	background-size: 60%;*/
+/*	background-repeat: no-repeat;*/
+
+}
+
+#top{
+	width: 70%;
+	height: 600px;
+	margin-top: 50px;
+	margin-left: 15%;
+	background-color: rgba(255, 245, 238, 0.7);
+	border-radius: 20px;
+	background-image: url(/images/frame2.jpg);
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.topmsg{
+	width: 70%;
+	font-family: mySecondFont;
+	font-size: 27px;
+	color: #493D26;
+	margin-left: 15%;
+	padding-top: 200px;
+
+}
+
+#main{
+	width: 70%;
+	height: 400px;
+	margin-top: 50px;
+	margin-left: 15%;
+	background-color: rgba(255, 245, 238, 0.7);
+	border-radius: 20px;
+}
+
+.signup{
+	display: inline;
+	float: left;
+	width: 450px;
+	height: 350px;
+	background-image: url(/images/button.jpg);	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 50px auto auto 100px;
+}
+
+.login{
+	display: inline;
+	float: left;
+	width: 450px;
+	height: 350px;
+	background-image: url(/images/button.jpg);	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 50px 100px auto auto;
+}
+
+.loginmsg{
+	font-size: 100px;
+	color: #FEFCFF;
+	text-align: center;
+	margin-top: 100px;
+	font-family: myFirstFont;
+
+}
+
+
+
+.sgupmsg{
+	font-size: 100px;
+	color: #FEFCFF;
+	text-align: center;
+	margin-top: 100px;
+	font-family: myFirstFont;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+p:hover{
+	color: #FFF8C6;
+}
+
+footer{
+	height: 150px;
+	background-color: rgba(255, 245, 238, 0.9);
+	border-radius: 80px;
+}
+
+h2{
+	font-family: mySecondFont;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 30px;
+	color: #FEFCFF;
+	text-shadow: 2px 2px #6F4E37;
+}
+
+h1{
+	font-family: mySecondFont;
+	font-size: 115px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 20px;
+	color: #FEFCFF;
+	text-shadow: 2px 2px #6F4E37;
+}

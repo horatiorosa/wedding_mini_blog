@@ -15,33 +15,45 @@ get '/' do
 	erb :welcome
 end
 
+get '/home' do
+	erb	:home
+end
 
+post '/delete' do
+	@user = User.where(username: params[:username]).last
+	 flash[:alert] = 'record will be deleted'
+	 User.delete
+end 
 
-get '/sign_up' do
-	erb	:sign_up
+get '/register' do
+	erb	:register
 end
 
 
-post '/sign_up' do
+post '/register' do
 	@user = User.create(username: params[:username], password: params[:password] )
 	if @user.save
-		redirect '/profile'  #i want to redirect to the profile page
+		redirect '/home'  #i want to redirect to the profile page
 	else
-		redirect '/sign_up' #or maybe an ERROR TRY AGAIN alert
+		redirect '/register' #or maybe an ERROR TRY AGAIN alert
 	end
 end
 
-post '/profile' do
-	@user = User.create(fname: params[:fname], lname: params[:lname],email: params[:email] )
-	if @user.save
-		redirect '/home'
-	# else
+# post '/user' do
+# 	@user = User.create(fname: params[:fname], lname: params[:lname],email: params[:email] )
+# 	if @user.save
+# 		redirect '/home'
+# 	# else
 	# 	redirect '/sign_up' #or maybe an ERROR TRY AGAIN alert
-	end
+# 	end
+# end
+
+get '/login' do
+	erb	:login
 end
 
 
-post '/sign_in' do
+post '/login' do
 	@user = User.where(username: params[:username]).last
 		if @user and @user.password == params[:password]
 			session[:user_id] = @user.id
