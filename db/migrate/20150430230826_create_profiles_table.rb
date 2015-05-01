@@ -5,6 +5,7 @@ class CreateProfilesTable < ActiveRecord::Migration
   		t.string	:lname
   		t.string	:email
   		t.string	:password
+  		t.string	:user_id
 
   	end
 

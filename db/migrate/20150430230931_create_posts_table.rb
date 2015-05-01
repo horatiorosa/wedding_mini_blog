@@ -3,7 +3,7 @@ class CreatePostsTable < ActiveRecord::Migration
   	create_table :posts do |t|
   		t.string  :title
   		t.string  :body
-  		t.string  :user_id
+  		t.integer  :user_id
   		t.datetime	:created_at
   		t.datetime	:updated_at
   		
