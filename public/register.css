@@ -1,0 +1,150 @@
+ @font-face{
+  	font-family: mySecondFont;
+   src: url(/images/badscript.ttf);
+
+}
+
+
+nav{
+	margin-top: 10px;
+	margin-left: 50px;
+	height: 150px;
+	width: auto;
+
+}
+
+.logoutb{
+	width: 200px;
+	height: 150px;
+
+
+}
+.registerb {
+	width: 200px;
+	height: 150px;
+
+}
+.loginb {
+	width: 200px;
+	height: 150px;
+
+}
+
+
+
+.notice{
+	font-family: mySecondFont;
+	font-size: 16px;
+	color: #493D26;
+
+}
+
+.alert{
+	font-family: mySecondFont;
+	font-size: 16px;
+	color: #C36241;
+
+
+}
+
+
+
+p.hello{
+	font-size: 20px;
+	font-family: mySecondFont;
+}
+
+/*
+form{
+	width: 70%;
+	margin-left: 200px
+
+}*/
+
+
+.formtop{
+	width: 70%;
+	height: 70px;
+	margin-top: 0;
+	margin-left: 15%;
+	background-color:rgba(67, 191, 199, 0.9);
+	border-radius: 20px;
+}
+.formtop-msg{
+	font-size: 35px;
+	text-align: center;
+	color: #FEFCFF;
+	text-shadow: 2px 2px #6F4E37;
+	font-family: mySecondFont;
+}
+
+
+
+#formfield{
+	width: 80%;
+	height: 400px;
+	margin-left: 10%;
+	background-image: url("/images/board.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+#formfield form{
+	margin-top: 30px;
+	margin-left:15%;
+	width: 70%;
+	padding-top: 50px;
+}
+
+
+#formfield input {
+	width: 500px;
+	height: 50px;
+	font-size: 20px;
+	margin-top: 20px;
+	font-family: mySecondFont;
+	text-align: center;
+}
+
+#formfield label{
+	font-size: 30px;
+	font-family: mySecondFont;
+	font-weight: bold;
+	padding-right: 30px;
+	color: #FEFCFF;
+	font-weight: bold;
+}
+
+.button {
+    border: 0;
+    background-image: url("/images/reg.jpg");
+    background-size: 100px;
+	background-repeat:	no-repeat;
+/*	background-color: transparent;*/
+	height:			100px;
+	width:			500px;
+
+}
+
+img{
+	display: inline;
+	width: 450px;
+	height: 450px;
+}
+
+footer{
+	height: 100px;
+	background-color: rgba(255, 245, 238, 0.9);
+/*	border-radius: 80px;*/
+}
+
+h3{
+	font-family: mySecondFont;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 30px;
+	color: #6F4E37;
+	text-shadow: 2px 2px #FEFCFF;
+}
+

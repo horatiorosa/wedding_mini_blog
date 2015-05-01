@@ -1,17 +1,45 @@
+<nav>
+<% if current_user %>
+	 <p class="hello">Hello <%= current_user.fname %></p> |
+	 <a href="/loggout">
+	 	<img class="logoutb" src="/images/logout.jpg"> 
+	</a>
+ <% else %>
+	<a href="/login">
+		<img class="loginb" src="/images/waxlog.jpg">
+	</a>
+
+	 <a href="/register">
+	 	<img class= "registerb" src="/images/regwax.jpg">
+	 </a>
+		 <% end %>
+</nav>
 
 
-<!-- <h1>Sign up for our AHM Wedding blog</h1> -->
-<form action='/register' method="POST">
-	<fieldset>
+<div class="notice"><%= flash[:notice] if flash[:notice] %></div>
+<div class="alert"><%= flash[:alert] if flash[:notice] %></div>
+
+
+
+<div class="formtop">
+	<p class="formtop-msg">Register Form</p>
+</div>
+
+<div id="formfield">
+	<form action="/register" method="POST">
+		<fieldset>
 		<legend>Register for our AHM Wedding Blog:</legend>
 
 		<label for="username">Username</label>
-		<input type="text" name="username" placeholder="Enter your username" required>
+		<input type="text" name="username"  placeholder="Enter your username" required><br>
 		<label for="password">Please choose a password</label>
-		<input type="password" name="password" placeholder="Enter your password" required>
+		<input type="password" name="password"  placeholder="Enter your password" required><br>
 		<label for="password">Please re-enter your password</label>
 		<input type="password" name="repassword" placeholder="Re-enter your password" required>
-		<input type="submit">
+		<br>
 
+		<input class="button" type="submit">
 	</fieldset>
 </form>
+</div>
+

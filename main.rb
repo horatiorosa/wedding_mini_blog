@@ -34,7 +34,7 @@ post '/register' do
 	@user = User.new(username: params[:username], password: params[:password] )
 		redirect '/profile' 
 	end
-end
+
 
 get '/profile' do
 	erb	:profile

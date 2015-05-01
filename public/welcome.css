@@ -18,9 +18,9 @@ body{
 }
 
 header{
-	height: 250px;
+	height: 150px;
 	background-color: rgba(255, 245, 238, 0.9);
-	border-radius: 80px;
+/*	border-radius: 80px;*/
 	/*background-image: url(/images/frame2.jpg);*/
 /*	background-position: center;
 	background-size: 60%;*/
@@ -98,7 +98,7 @@ header{
 	font-size: 100px;
 	color: #FEFCFF;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 102px;
 	font-family: myFirstFont;
 
 }
@@ -111,11 +111,11 @@ p:hover{
 	color: #FFF8C6;
 }
 
-footer{
+/*footer{
 	height: 150px;
 	background-color: rgba(255, 245, 238, 0.9);
 	border-radius: 80px;
-}
+}*/
 
 h2{
 	font-family: mySecondFont;
@@ -128,11 +128,11 @@ h2{
 
 h1{
 	font-family: mySecondFont;
-	font-size: 115px;
+	font-size: 80px;
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-top: 20px;
-	color: #FEFCFF;
-	text-shadow: 2px 2px #6F4E37;
+	padding-top: 5px;
+	color: #6F4E37;
+	text-shadow: 5px 5px #FEFCFF;
 }
