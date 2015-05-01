@@ -6,17 +6,18 @@
 	<script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="../public/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="../public/cool.js"></script>
-	<link rel="stylesheet" type="text/css" href="../styles.css">
-
+	<link rel="stylesheet" type="text/css" href="../welcome.css">
+	<link rel="stylesheet" type="text/css" href="../register.css">
+	<link rel="stylesheet" type="text/css" href="../login.css">
 </head>
 <body>
 	<!-- header moved from welcome.erb -->
 		<header>
-		<h1> AHM Wedding blog</h1>
-	</header>
+		<a href="/"><h1> AHM Wedding blog</h1></a>
+		</header>
 
 
-		<% if flash[:notice] %>
+<!-- 		<% if flash[:notice] %>
 		    <div class="flash notice">
 		      <%=flash[:notice] %>
 		    </div>
@@ -25,17 +26,14 @@
 		    <div class="flash alert">
 		     	<%=flash[:alert] %>
 		    </div>
-  	<% end %>
+  	<% end %> -->
 
 
-
+<%= yield %>
 
 <!-- footer moved from welcome.erb -->
 	<footer>
-		<h3> Created by Antonio Horatio Mai</h3>
+		<h3> Created by Antonio Brown Horatio Rosa Mai Tamakoshi</h3>
 	</footer>
-
-<%= yield	%>
-
 </body>
 </html>

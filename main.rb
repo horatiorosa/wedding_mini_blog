@@ -15,33 +15,50 @@ get '/' do
 	erb :welcome
 end
 
+get '/home' do
+	erb	:home
+end
 
+post '/delete' do
+	@user = User.where(username: params[:username]).last
+	 flash[:alert] = 'record will be deleted'
+	 User.delete
+end 
 
-get '/sign_up' do
-	erb	:sign_up
+get '/register' do
+	erb	:register
 end
 
 
-post '/sign_up' do
-	@user = User.create(username: params[:username], password: params[:password] )
-	if @user.save
-		redirect '/profile'  #i want to redirect to the profile page
-	else
-		redirect '/sign_up' #or maybe an ERROR TRY AGAIN alert
+post '/register' do
+	@user = User.new(username: params[:username], password: params[:password] )
+		redirect '/profile' 
 	end
+
+
+get '/profile' do
+	erb	:profile
 end
+
 
 post '/profile' do
-	@user = User.create(fname: params[:fname], lname: params[:lname],email: params[:email] )
+	@user = User.create(fname: params[:fname], lname: params[:lname],email: params[:email]  )
 	if @user.save
-		redirect '/home'
-	# else
-	# 	redirect '/sign_up' #or maybe an ERROR TRY AGAIN alert
+		session[:user_id] = @user.id
+			flash[:notice] = "You have successfully completed your profile" 
+		redirect '/home'  #i want to redirect to the profile page
+	else
+		flash[:alert] = "There was a problem completing your profile. Please try again."
+		redirect '/profile'
 	end
 end
 
+get '/login' do
+	erb	:login
+end
 
-post '/sign_in' do
+
+post '/login' do
 	@user = User.where(username: params[:username]).last
 		if @user and @user.password == params[:password]
 			session[:user_id] = @user.id
@@ -53,9 +70,6 @@ post '/sign_in' do
 		redirect '/home'
 end
 
-# get '/login-failed' do
-# 	"Incorrect log-in. Please retry."
-# end
 
 def current_user
 	if session[:user_id]

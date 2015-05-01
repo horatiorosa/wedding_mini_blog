@@ -1,0 +1,38 @@
+<nav>
+<% if current_user %>
+	 <p class="hello">Hello <%= current_user.fname %></p> |
+	 <a href="/loggout">
+	 	<img class="logoutb" src="/images/logout.jpg"> 
+	</a>
+ <% else %>
+	<a href="/login">
+		<img class="loginb" src="/images/waxlog.jpg">
+	</a>
+
+	 <a href="/register">
+	 	<img class= "registerb" src="/images/regwax.jpg">
+	 </a>
+		 <% end %>
+</nav>
+
+
+<div class="notice"><%= flash[:notice] if flash[:notice] %></div>
+<div class="alert"><%= flash[:alert] if flash[:notice] %></div>
+
+
+<div class="logtop">
+	<p class="logtop-msg">Log In Form</p>
+</div>
+
+
+<div id="logfield">
+	<form action="/login" method="POST">
+
+		<label for="username">Username</label>
+		<input type="text" name="username"  placeholder="Enter your username" required><br>
+		<label for="password">Please enter your password</label>
+		<input type="password" name="password"  placeholder="Enter your password" required><br>
+		<input class="button" type="submit">
+
+</form>
+</div>
