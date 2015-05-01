@@ -10,8 +10,30 @@
 
 </head>
 <body>
-	
+	<!-- header moved from welcome.erb -->
+		<header>
+		<h1> AHM Wedding blog</h1>
+	</header>
 
+
+		<% if flash[:notice] %>
+		    <div class="flash notice">
+		      <%=flash[:notice] %>
+		    </div>
+		<% end %>
+		<% if flash[:alert] %>
+		    <div class="flash alert">
+		     	<%=flash[:alert] %>
+		    </div>
+  	<% end %>
+
+
+
+
+<!-- footer moved from welcome.erb -->
+	<footer>
+		<h3> Created by Antonio Horatio Mai</h3>
+	</footer>
 
 <%= yield	%>
 
