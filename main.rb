@@ -31,22 +31,27 @@ end
 
 
 post '/register' do
-	@user = User.create(username: params[:username], password: params[:password] )
-	if @user.save
-		redirect '/home'  #i want to redirect to the profile page
-	else
-		redirect '/register' #or maybe an ERROR TRY AGAIN alert
+	@user = User.new(username: params[:username], password: params[:password] )
+		redirect '/profile' 
 	end
 end
 
-# post '/user' do
-# 	@user = User.create(fname: params[:fname], lname: params[:lname],email: params[:email] )
-# 	if @user.save
-# 		redirect '/home'
-# 	# else
-	# 	redirect '/sign_up' #or maybe an ERROR TRY AGAIN alert
-# 	end
-# end
+get '/profile' do
+	erb	:profile
+end
+
+
+post '/profile' do
+	@user = User.create(fname: params[:fname], lname: params[:lname],email: params[:email]  )
+	if @user.save
+		session[:user_id] = @user.id
+			flash[:notice] = "You have successfully completed your profile" 
+		redirect '/home'  #i want to redirect to the profile page
+	else
+		flash[:alert] = "There was a problem completing your profile. Please try again."
+		redirect '/profile'
+	end
+end
 
 get '/login' do
 	erb	:login
@@ -65,9 +70,6 @@ post '/login' do
 		redirect '/home'
 end
 
-# get '/login-failed' do
-# 	"Incorrect log-in. Please retry."
-# end
 
 def current_user
 	if session[:user_id]
