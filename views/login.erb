@@ -1,7 +1,7 @@
 <nav>
 <% if current_user %>
 	 <p class="hello">Hello <%= current_user.fname %></p> |
-	 <a href="/loggout">
+	 <a href="/logout">
 	 	<img class="logoutb" src="/images/logout.jpg"> 
 	</a>
  <% else %>
@@ -21,23 +21,22 @@
 
 
 <div class="logtop">
-	<p class="logtop-msg">Log In Form</p>
+	<p class="logtop-msg">Please Log In</p>
 </div>
 
 
 <div id="logfield">
 	<form action="/login" method="POST">
 		<fieldset>
-		<legend>All fields are required</legend>
+			<legend>All fields are required</legend>
+			<div class="logcontents">
+				<label for="username">Username</label>
+				<input class="input" type="text" name="username"  placeholder="Enter your username" required><br>
+				<label for="password">Password</label>
+				<input  class="input" type="password" name="password"  placeholder="Enter your password" required><br>
+				<input  class="book" type="image" src="/images/log.jpg" width="175px" height=" 75px" border="0" alt="Submit" />
 
-		<div class="logcontents">
-		<label for="username">Username</label>
-		<input class="input" type="text" name="username"  placeholder="Enter your username" required><br>
-		<label for="password">Password</label>
-		<input  class="input" type="password" name="password"  placeholder="Enter your password" required><br>
-		<input  class="book" type="image" src="/images/log.jpg" width="175px" height=" 75px" border="0" alt="Submit" />
-
-	</div>
-		</fieldset>
+			</div>
+	</fieldset>
 </form>
 </div>

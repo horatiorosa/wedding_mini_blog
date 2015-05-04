@@ -92,7 +92,7 @@ fieldset{
 }
 
 .regcontents{
-	margin-left: 12%;
+	margin-left: 5%;
 }
 
 #formfield{
@@ -101,13 +101,13 @@ fieldset{
 	margin-left: 10%;
 	background-image: url("/images/board.jpg");
 	background-size: 100%;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 
 }
 
 #formfield form{
-	margin-top: 30px;
-	margin-left: 10%;
+	margin: 30px auto 30px 10%;
+	/*margin-left: 10%;*/
 	width: 80%;
 	height: auto;
 	padding-top: 30px;

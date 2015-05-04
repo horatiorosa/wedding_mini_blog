@@ -10,6 +10,17 @@ set :database, "sqlite3:exercise.sqlite3"
 set :sessions, true
 use Rack::Flash, sweep: true
 
+# def current_user
+# 	if session[:user_id]
+# 		@current_user = User.find(session[:user_id])
+# 	end
+# end
+
+
+def current_user
+	session[:user_id] ? User.find(session[:user_id]) : nil
+end
+
 
 get '/' do 
 	erb :welcome
@@ -19,11 +30,7 @@ get '/home' do
 	erb	:home
 end
 
-post '/delete' do
-	@user = User.where(username: params[:username]).last
-	 flash[:alert] = 'record will be deleted'
-	 User.delete
-end 
+
 
 get '/register' do
 	erb	:register
@@ -31,27 +38,12 @@ end
 
 
 post '/register' do
-	@user = User.new(username: params[:username], password: params[:password] )
-		redirect '/profile' 
+	@user = User.create(username: params[:username], password: params[:password], fname: params[:fname], lname: params[:lname],email: params[:email])
+	my_user = User.find_by(username: params[:username])
+	session[:user_id] = my_user.id
+		redirect '/home' 
 	end
 
-
-get '/profile' do
-	erb	:profile
-end
-
-
-post '/profile' do
-	@user = User.create(fname: params[:fname], lname: params[:lname],email: params[:email]  )
-	if @user.save
-		session[:user_id] = @user.id
-			flash[:notice] = "You have successfully completed your profile" 
-		redirect '/home'  #i want to redirect to the profile page
-	else
-		flash[:alert] = "There was a problem completing your profile. Please try again."
-		redirect '/profile'
-	end
-end
 
 get '/login' do
 	erb	:login
@@ -66,14 +58,28 @@ post '/login' do
 			redirect '/home'  
 		else
 			flash[:alert] = "There was a problem signing you in. Please try again."
+			redirect '/login'
 		end
-		redirect '/home'
 end
 
+post '/delete' do
+	@user = User.where(username: params[:username]).last
+	 flash[:alert] = 'record will be deleted'
+	 User.delete
+end 
 
-def current_user
-	if session[:user_id]
-		@current_user = User.find(session[:user_id])
-	end
+get '/logout' do
+  session.clear
+  redirect '/'
+  flash[:notice] = "you have successfully logged out"
+end
+
+get '/posts' do
+	erb :posts
+end
+
+post '/posts' do
+	Post.create(title: params[:title], posts: params[:posts], user_id: current_user.id)
+	redirect to('/home')
 end
 

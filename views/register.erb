@@ -1,7 +1,7 @@
 <nav>
 <% if current_user %>
 	 <p class="hello">Hello <%= current_user.fname %></p> |
-	 <a href="/loggout">
+	 <a href="/logout">
 	 	<img class="logoutb" src="/images/logout.jpg"> 
 	</a>
  <% else %>
@@ -22,24 +22,36 @@
 
 
 <div class="formtop">
-	<p class="formtop-msg">Register Form</p>
+	<p class="formtop-msg">Registration Form</p>
 </div>
 
 <div id="formfield">
 	<form action="/register" method="POST">
 		<fieldset>
+
 		<legend>All fields are required</legend>
 
 		<div class="regcontents">
-		<label for="username">Choose a Username</label>
-		<input class="input" type="text" name="username"  placeholder="Enter your username" required><br>
-		<label for="password">Choose a Password</label>
-		<input class="input" type="password" name="password"  placeholder="Enter your password" required><br>
-		<label for="password">Re-enter Password</span></label>
-		<input class="input" type="password" name="repassword" placeholder="Re-enter your password" required>
+			<label for="username">Choose a username</label>
+			<input class="input" type="text" name="username"  placeholder="Enter your username" required><br>
 
-		<input  class="book" type="image" src="/images/reg.jpg" width="175px" height=" 75px" border="0" alt="Submit" />
-	</div>
+			<label for="password">Choose a password</label>
+			<input class="input" type="password" name="password"  placeholder="Enter your password" required><br>
+
+			<label for="password">Re-enter password</label>
+			<input class="input" type="password" name="2xpassword" placeholder="Re-enter your password" required><br>
+
+			<label for="fname">First Name</label>
+			<input class="input" type="text" name="fname" placeholder="First Name" required><br>
+
+			<label for="lname">Last Name</label>
+			<input class="input" type="text" name="lname" placeholder="Last Name" required><br>
+
+			<label for="fname">Email Address</label>
+			<input class="input" type="text" name="email" placeholder="Email Address" required><br>
+
+			<input  class="book" type="image" src="/images/reg.jpg" width="175px" height=" 75px" border="0" alt="Submit"/>
+		</div>
 
 	</fieldset>
 </form>
