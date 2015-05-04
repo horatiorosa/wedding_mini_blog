@@ -19,12 +19,13 @@ body{
 
 header{
 	height: 250px;
-	background-color: rgba(255, 245, 238, 0.9);
-	border-radius: 80px;
-	/*background-image: url(/images/frame2.jpg);*/
+	/*background-color: rgba(255, 245, 238, 0.9);*/
+	/*border-radius: 80px;*/
+	background-image: url(/images/halftone.png);
 /*	background-position: center;
 	background-size: 60%;*/
-/*	background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
+	background-opacity: 0.7;
 
 }
 
@@ -111,19 +112,22 @@ p:hover{
 	color: #FFF8C6;
 }
 
-footer{
-	height: 150px;
-	background-color: rgba(255, 245, 238, 0.9);
-	border-radius: 80px;
+/*footer{
+	background-image: url(/images/halftone.png);
+	background-repeat: no-repeat;
+	background-opacity: 0.7;
+	background-size: 100%;
+	margin-top: 60px;
 }
-
-h2{
+*/
+h3{
 	font-family: mySecondFont;
 	font-size: 25px;
 	text-align: center;
 	padding-top: 30px;
 	color: #FEFCFF;
 	text-shadow: 2px 2px #6F4E37;
+	padding: auto;
 }
 
 h1{

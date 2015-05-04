@@ -19,7 +19,12 @@ body{
 
 header{
 	height: 150px;
-	background-color: rgba(255, 245, 238, 0.9);
+	background-image: url(/images/halftone.png);
+	background-repeat: no-repeat;
+	background-opacity: 0.7;
+	background-size: 100%;
+	margin-bottom: 30px;
+	/*background-color: rgba(255, 245, 238, 0.9);*/
 /*	border-radius: 80px;*/
 	/*background-image: url(/images/frame2.jpg);*/
 /*	background-position: center;
@@ -69,7 +74,7 @@ header{
 	background-image: url(/images/button.jpg);	
 	background-size: 100%;
 	background-repeat: no-repeat;
-	margin: 50px auto auto 100px;
+	margin: 50px auto auto 50px;
 }
 
 .login{
@@ -80,11 +85,11 @@ header{
 	background-image: url(/images/button.jpg);	
 	background-size: 100%;
 	background-repeat: no-repeat;
-	margin: 50px 100px auto auto;
+	margin: 50px 0 auto auto;
 }
 
 .loginmsg{
-	font-size: 100px;
+	font-size: 85px;
 	color: #FEFCFF;
 	text-align: center;
 	margin-top: 100px;
@@ -95,7 +100,7 @@ header{
 
 
 .sgupmsg{
-	font-size: 100px;
+	font-size: 75px;
 	color: #FEFCFF;
 	text-align: center;
 	margin-top: 102px;
@@ -111,19 +116,23 @@ p:hover{
 	color: #FFF8C6;
 }
 
-/*footer{
-	height: 150px;
-	background-color: rgba(255, 245, 238, 0.9);
-	border-radius: 80px;
-}*/
+footer{
+	background-image: url(/images/halftone.png);
+	background-repeat: no-repeat;
+	background-opacity: 0.7;
+	background-size: 100%;
+	margin-top: 60px;
+	height: 100px;
+}
 
-h2{
+h3{
 	font-family: mySecondFont;
 	font-size: 25px;
 	text-align: center;
-	padding-top: 30px;
-	color: #FEFCFF;
-	text-shadow: 2px 2px #6F4E37;
+	padding-top: 25px;
+	color: #6F4E37;
+	text-shadow: 2px 2px #FEFCFF;
+	margin: auto;
 }
 
 h1{
@@ -136,3 +145,11 @@ h1{
 	color: #6F4E37;
 	text-shadow: 5px 5px #FEFCFF;
 }
+
+/*footer{
+	background-image: url(/images/halftone.png);
+	background-repeat: no-repeat;
+	background-opacity: 0.7;
+	background-size: 100%;
+}*/
+

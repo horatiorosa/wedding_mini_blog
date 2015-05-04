@@ -13,6 +13,7 @@ nav{
 
 }
 
+
 .logoutb{
 	width: 200px;
 	height: 150px;
@@ -20,13 +21,13 @@ nav{
 
 }
 .registerb {
-	width: 200px;
-	height: 150px;
+	width: 150px;
+	height: 100px;
 
 }
 .loginb {
-	width: 200px;
-	height: 150px;
+	width: 150px;
+	height: 100px;
 
 }
 
@@ -62,7 +63,9 @@ p.hello{
 	height: 70px;
 	margin-top: 0;
 	margin-left: 15%;
-	background-color:rgba(67, 191, 199, 0.9);
+	background-image: url("/images/tblue.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
 	border-radius: 20px;
 }
 .logtop-msg{
@@ -73,11 +76,17 @@ p.hello{
 	font-family: mySecondFont;
 }
 
+legend{
+	font-family: mySecondFont;
+	font-size: 30px;
+	color: #FEFCFF;
+}
+
 
 
 #logfield{
 	width: 80%;
-	height: 350px;
+	height: auto;
 	margin-left: 10%;
 	background-image: url("/images/board.jpg");
 	background-size: 100%;
@@ -87,17 +96,19 @@ p.hello{
 
 #logfield form{
 	margin-top: 30px;
-	margin-left:15%;
-	width: 70%;
-	padding-top: 50px;
+	margin-left:10%;
+	width: 80%;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 
-#logfield input {
+#logfield .input {
 	width: 500px;
 	height: 50px;
 	font-size: 20px;
-	margin-top: 20px;
+	margin-top: 45px;
 	font-family: mySecondFont;
 	text-align: center;
 }
@@ -106,22 +117,20 @@ p.hello{
 	font-size: 30px;
 	font-family: mySecondFont;
 	font-weight: bold;
-	padding-right: 30px;
 	color: #FEFCFF;
 	font-weight: bold;
-	padding-top: 30px;
+	padding-right: 30px;
 }
 
-.button {
-    border: 0;
-/*    background-image: url("/images/log.jpg");
-    background-size: 100px;
-	background-repeat:	no-repeat;
-*//*	background-color: transparent;*/
-	height:			100px;
-	width:			500px;
-	/*background-position: center;*/
+.logcontents{
+	margin-left: 15%;
+}
 
+.book{
+	margin: auto;
+	margin-left: 30%;
+	padding-top: 40px;
+	padding-bottom: 30px;
 }
 
 img{
@@ -134,7 +143,7 @@ img{
 	height: 100px;
 	background-color: rgba(255, 245, 238, 0.9);
 /*	border-radius: 80px;
-}*/
+}
 
 h2{
 	font-family: mySecondFont;

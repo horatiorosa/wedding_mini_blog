@@ -28,13 +28,16 @@
 <div id="logfield">
 	<form action="/login" method="POST">
 		<fieldset>
-		<legend>Login to AHM Wedding Blog:</legend>
+		<legend>All fields are required</legend>
 
+		<div class="logcontents">
 		<label for="username">Username</label>
-		<input type="text" name="username"  placeholder="Enter your username" required><br>
-		<label for="password">Please enter your password</label>
-		<input type="password" name="password"  placeholder="Enter your password" required><br>
-		<input class="button" type="submit">
+		<input class="input" type="text" name="username"  placeholder="Enter your username" required><br>
+		<label for="password">Password</label>
+		<input  class="input" type="password" name="password"  placeholder="Enter your password" required><br>
+		<input  class="book" type="image" src="/images/log.jpg" width="175px" height=" 75px" border="0" alt="Submit" />
+
+	</div>
 		</fieldset>
 </form>
 </div>

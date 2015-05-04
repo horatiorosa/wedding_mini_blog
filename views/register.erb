@@ -28,17 +28,19 @@
 <div id="formfield">
 	<form action="/register" method="POST">
 		<fieldset>
-		<legend>Register for our AHM Wedding Blog:</legend>
+		<legend>All fields are required</legend>
 
-		<label for="username">Username</label>
-		<input type="text" name="username"  placeholder="Enter your username" required><br>
-		<label for="password">Please choose a password</label>
-		<input type="password" name="password"  placeholder="Enter your password" required><br>
-		<label for="password">Please re-enter your password</label>
-		<input type="password" name="repassword" placeholder="Re-enter your password" required>
-		<br>
+		<div class="regcontents">
+		<label for="username">Choose a Username</label>
+		<input class="input" type="text" name="username"  placeholder="Enter your username" required><br>
+		<label for="password">Choose a Password</label>
+		<input class="input" type="password" name="password"  placeholder="Enter your password" required><br>
+		<label for="password">Re-enter Password</span></label>
+		<input class="input" type="password" name="repassword" placeholder="Re-enter your password" required>
 
-		<input class="button" type="submit">
+		<input  class="book" type="image" src="/images/reg.jpg" width="175px" height=" 75px" border="0" alt="Submit" />
+	</div>
+
 	</fieldset>
 </form>
 </div>
