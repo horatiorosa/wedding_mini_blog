@@ -17,17 +17,24 @@ body{
 
 }
 
-header{
+.hello{
+	font-family: mySecondFont;
+	font-size:50px;
+	font-weight: bold;
+	color: #C2DFFF;
+}
+
+/*header{
 	height: 250px;
-	/*background-color: rgba(255, 245, 238, 0.9);*/
-	/*border-radius: 80px;*/
+	background-color: rgba(255, 245, 238, 0.9);
+	border-radius: 80px;
 	background-image: url(/images/halftone.png);
-/*	background-position: center;
-	background-size: 60%;*/
+	background-position: center;
+	background-size: 60%;
 	background-repeat: no-repeat;
 	background-opacity: 0.7;
 
-}
+}*/
 
 #top{
 	width: 70%;
@@ -112,14 +119,8 @@ p:hover{
 	color: #FFF8C6;
 }
 
-/*footer{
-	background-image: url(/images/halftone.png);
-	background-repeat: no-repeat;
-	background-opacity: 0.7;
-	background-size: 100%;
-	margin-top: 60px;
-}
-*/
+
+/*
 h3{
 	font-family: mySecondFont;
 	font-size: 25px;
@@ -129,8 +130,8 @@ h3{
 	text-shadow: 2px 2px #6F4E37;
 	padding: auto;
 }
-
-h1{
+*/
+/*h1{
 	font-family: mySecondFont;
 	font-size: 115px;
 	text-align: center;
@@ -140,3 +141,4 @@ h1{
 	color: #FEFCFF;
 	text-shadow: 2px 2px #6F4E37;
 }
+*/

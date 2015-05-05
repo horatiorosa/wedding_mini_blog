@@ -13,8 +13,8 @@
 
 
 .logoutb{
-	width: 150px;
-	height: 100px;
+	width: 200px;
+	height: 150px;
 
 
 }
@@ -62,7 +62,7 @@ form{
 }*/
 
 
-.formtop{
+.posthometop{
 	width: 70%;
 	height: 70px;
 	margin-top: 0;
@@ -72,7 +72,7 @@ form{
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
-.formtop-msg{
+.posthometop-msg{
 	font-size: 35px;
 	text-align: center;
 	color: #FEFCFF;
@@ -80,21 +80,11 @@ form{
 	font-family: mySecondFont;
 }
 
-legend{
-	font-family: mySecondFont;
-	font-size: 30px;
-	color: #FEFCFF;
-}
-
-fieldset{
-	border: solid 3px #EDC9AF;
-}
-
-.regcontents{
+.postcontents{
 	margin-left: 7%;
 }
 
-#formfield{
+#postings{
 	width: 80%;
 	height: auto;
 	margin-left: 10%;
@@ -104,7 +94,7 @@ fieldset{
 
 }
 
-#formfield form{
+#postings form{
 	margin: 30px auto 30px 10%;
 	/*margin-left: 10%;*/
 	width: 80%;
@@ -114,24 +104,23 @@ fieldset{
 }
 
 
-#formfield .input {
-	width: 500px;
-	height: 50px;
-	font-size: 20px;
+#postings .input {
+	width: 250px;
+	height: 40px;
+	font-size: 16px;
 	margin-top: 45px;
 	font-family: mySecondFont;
 	text-align: center;
 }
 
-#formfield label{
-	font-size: 30px;
+#postings textarea {
+	width: 400px;
+	height: 70px;
+	font-size: 16px;
+	margin-top: 45px;
 	font-family: mySecondFont;
-	font-weight: bold;
-	padding-right: 30px;
-	color: #FEFCFF;
-	
+	text-align: center;
 }
-
 
 .book{
 
@@ -139,6 +128,3 @@ fieldset{
 	padding-top: 40px;
 	padding-bottom: 30px;
 }
-
-
-

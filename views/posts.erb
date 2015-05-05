@@ -1,13 +1,40 @@
+<nav>
+<% if current_user %>
+	 <p class="hello">Hello <%= current_user.fname %></p> 
+	 <span style="float: left"><a href="/logout">
+	 	<img class="logoutb" src="/images/lout.jpg"> 
+	</a></span>
+ <% else %>
+	<a href="/login">
+		<img class="loginb" src="/images/waxlog.jpg">
+	</a>
 
-<h2>What's on your mind? Enter a new post</h2>
+	 <a href="/register">
+	 	<img class= "registerb" src="/images/regwax.jpg">
+	 </a>
+		 <% end %>
+</nav>
 
-<div id="newposts">
-	
-	<form id="newpost" action="/posts" method="POST">
-		<input id="title" class="input" type="text" name="title" placeholder="Enter post title"><br>
-		<textarea name="posts" id="posts" cols="100" rows="3"></textarea><br>
-		<input class="submit" type="submit" value="Submit your post">
 
-	</form>
-
+<div class="flash">
+	<p class="notice"><%= flash[:notice] if flash[:notice] %></p>
+	<p class="alert"><%= flash[:alert] if flash[:notice] %>
+	</p>
 </div>
+
+
+	<div class="posttop">
+		<div class="posttop-msg">What's on your mind? Let's share!
+		</div>
+	<div>
+	<div id="newposts">
+		<form id="newpost" action="/posts" method="POST">
+			<div class="postcontents">
+				<input id="title" class="input" type="text" name="title" placeholder="Enter post title"><br>
+
+				<textarea name="posts" id="posts" cols="100" rows="3" placeholder="What would you like to share?"></textarea><br>
+
+				<input  class="book" type="image" src="/images/submit.jpg" width="175px" height=" 75px" border="0" alt="Submit"/>
+			</div>
+		</form>
+	</div>

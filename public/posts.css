@@ -4,17 +4,10 @@
 
 }
 
-.hello{
-	font-family: mySecondFont;
-	font-size:50px;
-	font-weight: bold;
-	color: #C2DFFF;
-}
-
 
 .logoutb{
-	width: 150px;
-	height: 100px;
+	width: 200px;
+	height: 150px;
 
 
 }
@@ -29,8 +22,6 @@
 	height: 100px;
 
 }
-
-
 
 .notice{
 	font-family: mySecondFont;
@@ -54,15 +45,8 @@ p.hello{
 	font-family: mySecondFont;
 }
 
-/*
-form{
-	width: 70%;
-	margin-left: 200px
 
-}*/
-
-
-.formtop{
+.posttop{
 	width: 70%;
 	height: 70px;
 	margin-top: 0;
@@ -72,7 +56,7 @@ form{
 	background-repeat: no-repeat;
 	border-radius: 20px;
 }
-.formtop-msg{
+.posttop-msg{
 	font-size: 35px;
 	text-align: center;
 	color: #FEFCFF;
@@ -80,23 +64,14 @@ form{
 	font-family: mySecondFont;
 }
 
-legend{
-	font-family: mySecondFont;
-	font-size: 30px;
-	color: #FEFCFF;
+
+.postcontents{
+	margin-left: 5%;
 }
 
-fieldset{
-	border: solid 3px #EDC9AF;
-}
-
-.regcontents{
-	margin-left: 7%;
-}
-
-#formfield{
+#newposts{
 	width: 80%;
-	height: auto;
+/*	height: auto;*/
 	margin-left: 10%;
 	background-image: url("/images/board.jpg");
 	background-size: 100%;
@@ -104,17 +79,16 @@ fieldset{
 
 }
 
-#formfield form{
+#newposts form{
 	margin: 30px auto 30px 10%;
 	/*margin-left: 10%;*/
 	width: 80%;
-	height: auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
 
-#formfield .input {
+#newposts .input {
 	width: 500px;
 	height: 50px;
 	font-size: 20px;
@@ -123,22 +97,43 @@ fieldset{
 	text-align: center;
 }
 
-#formfield label{
+/*#newposts label{
 	font-size: 30px;
 	font-family: mySecondFont;
 	font-weight: bold;
 	padding-right: 30px;
 	color: #FEFCFF;
 	
+}*/
+
+#newposts textarea {
+	width: 600px;
+	height: 200px;
+	font-size: 20px;
+	margin-top: 45px;
+	font-family: mySecondFont;
+	text-align: center;
 }
 
+#title{
+	margin-left: 9%;
+}
 
 .book{
-
+/*	margin: auto;*/
 	margin-left: 35%;
 	padding-top: 40px;
 	padding-bottom: 30px;
 }
 
+
+h3{
+	font-family: mySecondFont;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 30px;
+	color: #6F4E37;
+	text-shadow: 2px 2px #FEFCFF;
+}
 
 

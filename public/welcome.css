@@ -21,16 +21,78 @@ header{
 	height: 150px;
 	background-image: url(/images/halftone.png);
 	background-repeat: no-repeat;
-	background-opacity: 0.7;
 	background-size: 100%;
-	margin-bottom: 30px;
-	/*background-color: rgba(255, 245, 238, 0.9);*/
-/*	border-radius: 80px;*/
-	/*background-image: url(/images/frame2.jpg);*/
-/*	background-position: center;
-	background-size: 60%;*/
-/*	background-repeat: no-repeat;*/
+	background-repeat: no-repeat;*/
 
+}
+
+nav{
+	width: 25%;
+	height: 100px;
+	background-image: url("/images/halftone.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+p.hello{
+	font-family: mySecondFont;
+	font-size: 40px;
+	font-weight: bold;
+	color: #6F4E37;
+	text-shadow: 5px 5px #FEFCFF;
+	padding-left: 30px;
+}
+
+.alert{
+
+	font-family: mySecondFont;
+	font-size:30px;
+	font-weight: bold;
+	text-shadow: 2px 2px #FEFCFF;
+	padding-left: 30px;
+}
+
+
+
+
+.notice{
+	font-family: mySecondFont;
+	font-size:30px;
+	font-weight: bold;
+	/*text-shadow: 2px 2px #FEFCFF;*/
+	color: #FEFCFF;
+	padding-left: 15%;
+	padding-top: -60%;
+
+
+}
+
+
+
+.logoutb{
+	width: 150px;
+	height: 100px;
+
+
+}
+.registerb {
+	width: 150px;
+	height: 100px;
+
+}
+
+.loginb {
+	width: 150px;
+	height: 100px;
+
+}
+
+.flash{
+	text-align: center;
+	margin-left: 30%;
 }
 
 #top{
@@ -74,7 +136,7 @@ header{
 	background-image: url(/images/button.jpg);	
 	background-size: 100%;
 	background-repeat: no-repeat;
-	margin: 50px auto auto 50px;
+	margin: 50px auto auto 80px;
 }
 
 .login{
@@ -112,17 +174,21 @@ a{
 	text-decoration: none;
 }
 
-p:hover{
-	color: #FFF8C6;
+.book{
+
+	margin-left: 35%;
+	padding-top: 40px;
+	padding-bottom: 30px;
 }
+
 
 footer{
 	background-image: url(/images/halftone.png);
 	background-repeat: no-repeat;
-	background-opacity: 0.7;
 	background-size: 100%;
 	margin-top: 60px;
 	height: 100px;
+	width: 100%;
 }
 
 h3{
@@ -132,7 +198,6 @@ h3{
 	padding-top: 25px;
 	color: #6F4E37;
 	text-shadow: 2px 2px #FEFCFF;
-	margin: auto;
 }
 
 h1{
@@ -145,11 +210,4 @@ h1{
 	color: #6F4E37;
 	text-shadow: 5px 5px #FEFCFF;
 }
-
-/*footer{
-	background-image: url(/images/halftone.png);
-	background-repeat: no-repeat;
-	background-opacity: 0.7;
-	background-size: 100%;
-}*/
 

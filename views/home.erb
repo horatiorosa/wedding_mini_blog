@@ -1,8 +1,33 @@
+<nav>
+<% if current_user %>
+	 <p class="hello">Hello <%= current_user.fname %></p> 
+	 <a href="/logout">
+	 	<img class="logoutb" src="/images/lout.jpg"> 
+	</a>
+ <% else %>
+	<a href="/login">
+		<img class="loginb" src="/images/waxlog.jpg">
+	</a>
 
-<h1>WELCOME TO AHM WEDDING BLOG</h1>
+	 <a href="/register">
+	 	<img class= "registerb" src="/images/regwax.jpg">
+	 </a>
+		 <% end %>
+</nav>
 
 
-<div class="postings">
+<div class="notice"><%= flash[:notice] if flash[:notice] %></div>
+<div class="alert"><%= flash[:alert] if flash[:notice] %></div>
+
+
+
+<div class="posthometop">
+	<p class="posthometop-msg">Recent Posts</p>
+</div>
+
+
+<div id="postings">
+	<div class="postcontents">
 	<p><span id="members_posts"> Your Posts </span>
 	<span id="new_post">New Post</span></p>
  	</div>
@@ -12,13 +37,13 @@
 		<h4> <%= post.title %></h4>
 		<p>	<%= post.posts %></p>
 		<% end %>
-	</div>
-
+	</div><!--postcontents-->
+</div><!--postings-->
 	<div class="column_two_members"id="allposts">
-		<form id="post" action="/posts" method="POST">
+		<form id="posts" action="/posts" method="POST">
 			<input id="title" class="input" type="text" name="title" placeholder="Enter post title"><br>
-			<textarea name="posts" id="posts" cols="100" rows="3"></textarea><br>
-			<input id="submit_post"class="submit" type="submit" value="Post">
+			<textarea name="posts" id="posts" cols="100" rows="3" placeholder="Let's share!"></textarea><br>
+			<input id="submit_post" class="book" type="image" src="/images/submit.jpg" width="130px" height=" 50px" border="0" alt="Submit"/>
 		</form>
 	</div>
 </div>

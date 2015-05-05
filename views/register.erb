@@ -1,23 +1,26 @@
 <nav>
 <% if current_user %>
-	 <p class="hello">Hello <%= current_user.fname %></p> |
+	 <p class="hello">Hello <%= current_user.fname %></p> 
 	 <a href="/logout">
-	 	<img class="logoutb" src="/images/logout.jpg"> 
-	</a>
+	 	<img class="logoutb" src="/images/lout.jpg"> 
+	</a>>
  <% else %>
 	<a href="/login">
 		<img class="loginb" src="/images/waxlog.jpg">
 	</a>
 
 	 <a href="/register">
-	 	<img class= "registerb" src="/images/regwax.jpg">
+	 	<img class="registerb" src="/images/regwax.jpg">
 	 </a>
 		 <% end %>
+
 </nav>
 
+<div class="flash">
+<p class="notice"><%= flash[:notice] if flash[:notice] %></p>
+<p class="alert"><%= flash[:alert] if flash[:notice] %></p>
+</div>
 
-<div class="notice"><%= flash[:notice] if flash[:notice] %></div>
-<div class="alert"><%= flash[:alert] if flash[:notice] %></div>
 
 
 
