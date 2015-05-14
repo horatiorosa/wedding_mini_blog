@@ -116,12 +116,16 @@ p.hello{
 }
 
 #title{
-	margin-left: 9%;
+	margin-left: 38%;
 }
 
-.book{
+#posts{
+	margin-left: 30%;
+}
+
+.book2{
 /*	margin: auto;*/
-	margin-left: 35%;
+	margin-left: 50%;
 	padding-top: 40px;
 	padding-bottom: 30px;
 }
