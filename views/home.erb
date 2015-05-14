@@ -17,7 +17,7 @@
 
 
 <div class="notice"><%= flash[:notice] if flash[:notice] %></div>
-<div class="alert"><%= flash[:alert] if flash[:notice] %></div>
+<div class="alert"><%= flash[:alert] if flash[:alert] %></div>
 
 
 
@@ -35,14 +35,14 @@
 	<div class="column_one_members">
 		<% @posts.each do |post| %>
 		<h4> <%= post.title %></h4>
-		<p>	<%= post.posts %></p>
+		<p>	<%= post.body %></p>
 		<% end %>
 	</div><!--postcontents-->
 </div><!--postings-->
 	<div class="column_two_members"id="allposts">
 		<form id="posts" action="/posts" method="POST">
 			<input id="title" class="input" type="text" name="title" placeholder="Enter post title"><br>
-			<textarea name="posts" id="posts" cols="100" rows="3" placeholder="Let's share!"></textarea><br>
+			<input name="body" id="posts"  placeholder="Let's share!"<br>
 			<input id="submit_post" class="book" type="image" src="/images/submit.jpg" width="130px" height=" 50px" border="0" alt="Submit"/>
 		</form>
 	</div>
