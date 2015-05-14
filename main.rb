@@ -80,7 +80,7 @@ get '/posts' do
 end
 
 post '/posts' do
-	Post.create(title: params[:title], posts: params[:posts], user_id: current_user.id)
+	Post.create(title: params[:title], body: params[:body], user_id:[current_user.id])
 	redirect to('/home')
 end
 
