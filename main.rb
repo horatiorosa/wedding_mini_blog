@@ -63,29 +63,11 @@ post '/login' do
 		end
 end
 
-'/delete' do
-	@user = User.where(username: params[:username], password: params[:password] )
-		if @user = user. username: params[:username] 
-			flash['This user will be delete']
-			User.delete(username: params[:username], userid: params[:user_id], password: params[:password] 
-				first_name: params[:fname], last_name: params[:lname], email: params[:email])
-			redirect '/home'
-		else
-			redirect '/home'
-		end
+post '/delete' do
+	@user = User.where(username: params[:username]).last
+	 flash[:alert] = 'record will be deleted'
+	 User.delete
 end 
-
-	post '/modify' do
-	@user = User.where(username: params[:username], password: params[:password] )
-		if @user = user. username: params[:username] 
-			flash['This user information will be updated']
-			User.update(username: params[:username], userid: params[:user_id], password: params[:password] 
-				first_name: params[:fname], last_name: params[:lname], email: params[:email])
-			redirect '/home'
-		else
-			redirect '/home'
-		end
-	end
 
 get '/logout' do
   session.clear
